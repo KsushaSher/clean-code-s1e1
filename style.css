@@ -1,5 +1,10 @@
 /* Basic Style */
 .page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-start;
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -34,6 +39,8 @@
 }
 .add-item {
   display: flex;
+  padding-top: 20px;
+  padding-bottom: 16px;
 }
 .todo__tasks {
   margin: 0;
@@ -146,11 +153,11 @@
   display: none;
 }
 
-.todo__task-item_edit-mode .todo__task_input {
+.todo__item_edit-mode .todo__task_input {
   display: inline-block;
   width: 224px;
 }
 
-.todo__task-item_edit-mode .todo__task_element-content {
+.todo__item_edit-mode .todo__task_element-content {
   display: none;
 }
